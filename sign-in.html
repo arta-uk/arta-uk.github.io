@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In / Register | Top Tech Suppliers</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Top Tech Suppliers</a></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="auth-wrapper">
+    <div class="auth-container">
+      <div class="auth-tabs">
+        <button id="signInTab" class="active" onclick="toggleForm('signIn')">Sign In</button>
+        <button id="registerTab" onclick="toggleForm('register')">Register</button>
+      </div>
+
+      <form id="signInForm" class="auth-form active">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign In</button>
+      </form>
+
+      <form id="registerForm" class="auth-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Top Tech Suppliers. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | Top Tech Suppliers</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Top Tech Suppliers</a></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="products">
+    <div class="container">
+      <h2>Our Products</h2>
+
+      <div class="filter-tabs">
+        <button class="active" onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('apple')">Apple</button>
+        <button onclick="filterProducts('blackberry')">Blackberry</button>
+        <button onclick="filterProducts('google')">Google</button>
+        <button onclick="filterProducts('huawei')">Huawei</button>
+        <button onclick="filterProducts('motorola')">Motorola</button>
+        <button onclick="filterProducts('redmi')">Redmi</button>
+        <button onclick="filterProducts('samsung')">Samsung</button>
+        <button onclick="filterProducts('sony')">Sony</button>
+        <button onclick="filterProducts('xiaomi')">Xiaomi</button>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <div class="product-card" data-brand="apple">
+          <img src="https://via.placeholder.com/150" alt="iPhone 14 Pro Max">
+          <h4>iPhone 14 Pro Max</h4>
+          <p>£999.00</p>
+        </div>
+        <div class="product-card" data-brand="apple">
+          <img src="https://via.placeholder.com/150" alt="AirPods Pro">
+          <h4>AirPods Pro</h4>
+          <p>£199.00</p>
+        </div>
+        <div class="product-card" data-brand="samsung">
+          <img src="https://via.placeholder.com/150" alt="Galaxy S23 Ultra">
+          <h4>Galaxy S23 Ultra</h4>
+          <p>£899.00</p>
+        </div>
+        <div class="product-card" data-brand="samsung">
+          <img src="https://via.placeholder.com/150" alt="Galaxy Buds">
+          <h4>Galaxy Buds</h4>
+          <p>£89.00</p>
+        </div>
+        <div class="product-card" data-brand="huawei">
+          <img src="https://via.placeholder.com/150" alt="Huawei P50 Pro">
+          <h4>Huawei P50 Pro</h4>
+          <p>£699.00</p>
+        </div>
+        <div class="product-card" data-brand="huawei">
+          <img src="https://via.placeholder.com/150" alt="Huawei Watch GT">
+          <h4>Huawei Watch GT</h4>
+          <p>£129.00</p>
+        </div>
+        <!-- Add more products as needed -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Top Tech Suppliers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

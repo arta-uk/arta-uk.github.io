@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .site-header {
+    background: #000;
+    color: #fff;
+    padding: 1em 0;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+  }
+  
+
+.nav-links {
+  display: flex;
+  justify-content: center; /* centers the links horizontally */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border: 2px solid transparent;        /* invisible border for consistent layout */
+  border-radius: 8px;                   /* makes it rounded */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  border-color: #fff;                   /* makes the border appear on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* optional: subtle hover bg */
+}
+
+
+
+  .hero {
+    background: #f5f5f5;
+    padding: 3em 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+  }
+  
+  .btn {
+    background: #0073e6;
+    color: white;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 1em;
+  }
+  
+  .products, .benefits, .newsletter {
+    padding: 3em 0;
+  }
+  
+  .product-grid, .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5em;
+    margin-top: 2em;
+  }
+  
+  .product-card, .benefit {
+    background: #fafafa;
+    padding: 1em;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  
+  .newsletter input {
+    padding: 0.75em;
+    font-size: 1em;
+    width: 250px;
+  }
+  
+  .newsletter button {
+    padding: 0.75em 1.5em;
+    background: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .site-footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .home-product-image {
+    width: 100px;
+  }
+
+
+  .home-svc-image {
+    width: 100px;
+    padding: 0%;
+  }
+
+
+ /*Sign in/Register page*/ 
+  .auth-wrapper {
+    background: #f5f5f5;
+    padding: 4em 0;
+    text-align: center;
+  }
+
+  .auth-container {
+    background: #fff;
+    max-width: 400px;
+    margin: auto;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+
+  .auth-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .auth-tabs button {
+    flex: 1;
+    padding: 1em;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .auth-tabs button.active {
+    border-bottom: 3px solid #0073e6;
+    color: #0073e6;
+  }
+
+  .auth-form {
+    display: none;
+    text-align: left;
+  }
+
+  .auth-form.active {
+    display: block;
+  }
+
+  .auth-form input {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .auth-form button {
+    width: 100%;
+    padding: 0.75em;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .auth-form button:hover {
+    background: #005bb5;
+  }
+
+
+
+  /*Products*/
+  .filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em 0;
+    flex-wrap: wrap;
+  }
+
+  .filter-tabs button {
+    padding: 0.6em 1.2em;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+
+  .filter-tabs button.active {
+    background: #0073e6;
+    color: white;
+    border-color: #0073e6;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5em;
+  }
+
+  .product-card {
+    background: #fafafa;
+    padding: 1em;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
