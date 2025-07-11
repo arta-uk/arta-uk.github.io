@@ -49,14 +49,12 @@ function toggleForm(type) {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  const registerForm = document.getElementById('registerForm');
+  const registerButton = document.getElementById('registerButton');
   const registerMessage = document.getElementById('registerMessage');
 
-  if (registerForm && registerMessage) {
-    registerForm.addEventListener('submit', function (e) {
-      e.preventDefault();
+  if (registerButton && registerMessage) {
+    registerButton.onclick = function () {
       registerMessage.style.display = 'block';
-      this.reset();
-    });
+    };
   }
 });

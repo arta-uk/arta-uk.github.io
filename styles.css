@@ -110,6 +110,8 @@ body {
   gap: 1em;
   flex-wrap: wrap;
   margin-top: 1em;
+  font-style:normal;
+  font-size: 100%;
 }
 
 .newsletter input {
@@ -117,6 +119,8 @@ body {
   font-size: 1em;
   width: 100%;
   max-width: 250px;
+  font-style:normal;
+  font-size: 100%;
 }
 
 .newsletter button {
@@ -126,6 +130,8 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  font-style:normal;
+  font-size: 100%;
 }
 
 /* Footer */
@@ -290,6 +296,7 @@ body {
   .newsletter form {
     flex-direction: column;
     align-items: center;
+    font-weight: bold;
   }
 
   .product-grid {
