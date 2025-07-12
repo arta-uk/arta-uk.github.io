@@ -1,9 +1,3 @@
-document.getElementById('newsletter-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const email = document.getElementById('email').value;
-  alert(`Thank you! We'll be in touch at ${email}`);
-  this.reset();
-});
 
 function filterProducts(brand) {
   const buttons = document.querySelectorAll('.filter-tabs button');
@@ -49,12 +43,41 @@ function toggleForm(type) {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  const registerButton = document.getElementById('registerButton');
-  const registerMessage = document.getElementById('registerMessage');
-
-  if (registerButton && registerMessage) {
-    registerButton.onclick = function () {
-      registerMessage.style.display = 'block';
-    };
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      alert(`Thank you! We'll be in touch at ${email}`);
+      this.reset();
+    });
   }
-});
+
+  const signInForm = document.getElementById('signInForm');
+  if (signInForm) {
+    signInForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      alert(`Incorrect email or password`);
+      this.reset();
+    });
+  }
+
+
+
+  const registerForm = document.getElementById('registerForm');
+  if (registerForm) {
+    registerForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      alert(`Thanks for registering. We will review your application and get back to you`);
+      this.reset();
+    });
+}
+}
+
+
+
+
+);
+
