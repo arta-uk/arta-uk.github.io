@@ -220,6 +220,7 @@ body {
   cursor: pointer;
   transition: background 0.3s;
   font-size: 80%;
+  margin-top: 10px;
 }
 
 .auth-form button:hover {

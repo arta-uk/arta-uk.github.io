@@ -52,32 +52,60 @@ document.addEventListener('DOMContentLoaded', function () {
       this.reset();
     });
   }
-
-  const signInForm = document.getElementById('signInForm');
-  if (signInForm) {
-    signInForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const email = document.getElementById('email').value;
-      alert(`Incorrect email or password`);
-      this.reset();
-    });
-  }
-
-
-
-  const registerForm = document.getElementById('registerForm');
-  if (registerForm) {
-    registerForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const email = document.getElementById('email').value;
-      alert(`Thanks for registering. We will review your application and get back to you`);
-      this.reset();
-    });
 }
-}
-
-
-
-
 );
 
+//All Forms
+
+document.addEventListener('DOMContentLoaded', function () {
+  const signInForm = document.getElementById('signInForm');
+  const registerForm = document.getElementById('registerForm');
+  const emailInput = document.getElementById('email');
+  const signInButton = document.getElementById('signInButton');
+  const registerButton = document.getElementById('registerButton');
+  const forgotButton = document.getElementById('forgotButton');
+
+  let clickedButton = null;
+
+  // Track which button was clicked
+  signInButton.addEventListener('click', function () {
+    clickedButton = 'signIn';
+  });
+
+  forgotButton.addEventListener('click', function () {
+    clickedButton = 'forgot';
+  });
+
+  registerButton.addEventListener('click', function () {
+    clickedButton = 'register';
+  });
+
+  signInForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form from submitting normally
+    const email = emailInput.value;
+    
+
+    if (clickedButton === 'signIn') {
+      alert(`Incorrect email or password`);
+    } else if (clickedButton === 'forgot') {
+      alert(`A password reminder has been sent to ${email}`);
+    } else if (clickedButton === 'register') {
+      alert(`Thanks for registering. We will review your application and get back to you`);
+    }
+
+    this.reset(); // Optional: Reset the form
+    clickedButton = null; // Reset click tracker
+  })
+  
+  registerForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent form from submitting normally
+    
+
+   if (clickedButton === 'register') {
+      alert(`Thanks for registering. We will review your application and get back to you`);
+    }
+
+    this.reset(); // Optional: Reset the form
+    clickedButton = null; // Reset click tracker
+  });
+});
