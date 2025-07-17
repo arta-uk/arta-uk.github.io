@@ -79,7 +79,7 @@ body {
 
 /* Content sections */
 .products, .benefits, .newsletter {
-  padding: 3em 0;
+  padding: 0em 0;
 }
 
 .product-grid, .benefit-grid {
